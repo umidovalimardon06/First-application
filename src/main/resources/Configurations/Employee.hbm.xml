@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <!-- Java class 'domain.Employee' mapped to DB table 'Employee' -->
+    <class name="domain.Employee" table="Employee">
+
+        <!-- Primary Key with generator -->
+        <id name="eid" column="EID" type="int">
+            <generator class="increment"/>
+            <!-- Other options: identity, sequence, uuid, native -->
+        </id>
+
+        <!-- Properties mapping -->
+        <property name="firstName" column="FIRSTNAME" type="string" not-null="true"/>
+        <property name="lastName" column="LASTNAME" type="string" not-null="true"/>
+        <property name="email" column="EMAIL" type="string" unique="true"/>
+
+    </class>
+</hibernate-mapping>
