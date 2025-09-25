@@ -22,7 +22,7 @@ public class SaveObjectTest {
             employee.setEid(101);
             employee.setFirstName("Alimardon");
             employee.setLastName("Umidov");
-            employee.setEmail("umidovalimarodon06@gmail.com");
+            employee.setEmail("umidov@gmail.com");
 
             transaction = session.beginTransaction();
             session.save(employee);

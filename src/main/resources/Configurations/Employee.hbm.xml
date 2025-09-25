@@ -5,7 +5,7 @@
 
 <hibernate-mapping>
     <!-- Java class 'domain.Employee' mapped to DB table 'Employee' -->
-    <class name="domain.Employee" table="Employee">
+    <class name="model.Employee" table="Employee">
 
         <!-- Primary Key with generator -->
         <id name="eid" column="EID" type="int">
